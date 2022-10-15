@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="hu" class="light-style" dir="ltr">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Quint Admin</title>
+    <meta name="description" content="" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/assets/dashboard/fonts/boxicons.css" />
+    <link rel="stylesheet" href="/public/assets/dashboard/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="/public/assets/dashboard/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="/public/assets/dashboard/css/demo.css" />
+    <link rel="stylesheet" href="/public/assets/dashboard/css/page-auth.css" />
+    <link rel="stylesheet" href="/public/assets/dashboard/css/page-misc.css" />
+    <link rel="stylesheet" href="/public/assets/dashboard/css/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="/public/assets/dashboard/css/apex-charts.css" />
+    <script src="/public/assets/dashboard/js/helpers.js"></script>
+
+</head>
+
+<body>
+
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        {%  include('@templates/fragments/sidemenu.twig') %}
+        <div class="layout-page">
+            {% include('@templates/fragments/navbar.twig') %}
+            <div class="content-wrapper">
+                {% block content %}{% endblock %}
+                <div class="content-backdrop fade"></div>
+            </div>
+        </div>
+    </div>
+    <div class="layout-overlay layout-menu-toggle"></div>
+</div>
+
+
+
+<script src="/public/assets/dashboard/js/jquery.js"></script>
+<script src="/public/assets/dashboard/js/popper.js"></script>
+<script src="/public/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/public/assets/dashboard/js/perfect-scrollbar.js"></script>
+
+<script src="/public/assets/dashboard/js/menu.js"></script>
+<script src="/public/assets/dashboard/js/main.js"></script>
+<script src="/public/assets/dashboard/js/config.js"></script>
+<script src="/public/assets/dashboard/js/apexcharts.js"></script>
+
+{% block js %}{% endblock %}
+</body>
+</html>

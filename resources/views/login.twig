@@ -1,0 +1,92 @@
+{% extends '@templates/layouts/admin.twig' %}
+
+{% block title %}Quint{% endblock %}
+
+{% block content %}
+<div class="container-xxl">
+    <div class="authentication-wrapper authentication-basic container-p-y">
+        <div class="authentication-inner">
+            <div class="card">
+                <div class="card-body">
+                    <div class="app-brand justify-content-center mb-5">
+                        <a href="index.html" class="app-brand-link gap-2">
+                            <img src="/public/assets/dashboard/img/maviz-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <form id="formAuthentication" class="mb-3 mt-5" action="/login" method="POST">
+                        <div class="mb-3">
+                            {#  dump(errors) #}
+                            {% for error in errors %}
+                            <div class="error">
+                                {{ error }}
+                            </div>
+                            {% endfor %}
+                            <label for="email" class="form-label">Felhasználó név</label>
+                            <input
+                                    type="text"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Írd be a felhasználó neved!"
+                                    autofocus
+                                    required
+                            />
+                        </div>
+                        <div class="mb-3 form-password-toggle">
+                            <div class="d-flex justify-content-between">
+                                <label class="form-label" for="password">Jelszó</label>
+                            </div>
+                            <div class="input-group input-group-merge">
+                                <input
+                                        type="password"
+                                        id="password"
+                                        class="form-control"
+                                        name="password"
+                                        placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                                        aria-describedby="password"
+                                        required
+                                />
+                                <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check"></div>
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-primary d-grid w-100" type="submit">Bejelentkezés</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block js %}
+<script>
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
+{% endblock %}

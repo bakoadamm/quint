@@ -1,0 +1,25 @@
+{
+  "name": "maviz/vote",
+  "license": "proprietary",
+  "description": "vote system",
+  "type": "project",
+  "require": {
+    "vlucas/phpdotenv": "^5.4",
+    "illuminate/events": "^8.83",
+    "twig/twig": "^3.0",
+    "ext-pdo": "*",
+    "illuminate/database": "^8.83",
+    "illuminate/pagination": "^8.83",
+    "wanfeiyy/dd": "^1.0"
+  },
+  "repositories": [],
+  "autoload" : {
+    "classmap" :[],
+    "psr-4" : {
+      "Quint\\": "src/",
+      "Quint\\App\\": "app/"
+    }
+  },
+  "autoload-dev": {},
+  "require-dev": {}
+}
