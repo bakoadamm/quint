@@ -1,0 +1,30 @@
+{
+  "name": "quint",
+  "version": "1.0.0",
+  "description": "[![](https://img.shields.io/badge/quint-framework-green)](https://img.shields.io/badge/quint-framework-brightgreen)",
+  "main": "webpack.mix.js",
+  "dependencies": {
+    "@editorjs/editorjs": "^2.25.0",
+    "@editorjs/header": "^2.6.2",
+    "laravel-mix": "^6.0.49"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "sass": "^1.55.0",
+    "sass-loader": "^12.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bakoadamm/quint.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bakoadamm/quint/issues"
+  },
+  "homepage": "https://github.com/bakoadamm/quint#readme"
+}

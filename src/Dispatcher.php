@@ -47,7 +47,7 @@ class Dispatcher {
 
         $handler = $this->router->match($request);
 
-        $params = isset($handler[1]) ? $handler[1] : null;
+        $params = $handler[1] ?? null;
 
         if ( ! $handler) {
             header("HTTP/1.1 404 Not Found");

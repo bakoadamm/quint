@@ -123,6 +123,6 @@ if ( ! function_exists('user')) {
      * @return array|null
      */
     function user() {
-        return isset($_SESSION['user']) ? $_SESSION['user'] : null;
+        return $_SESSION['user'] ?? null;
     }
 }

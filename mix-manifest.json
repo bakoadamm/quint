@@ -25,6 +25,9 @@
     "/public/assets/dashboard/fonts/boxicons/boxicons.woff": "/public/assets/dashboard/fonts/boxicons/boxicons.woff",
     "/public/assets/dashboard/fonts/boxicons/boxicons.woff2": "/public/assets/dashboard/fonts/boxicons/boxicons.woff2",
     "/public/assets/dashboard/img/error-404.png": "/public/assets/dashboard/img/error-404.png",
+    "/public/assets/dashboard/img/favicon/favicon-32x32.png": "/public/assets/dashboard/img/favicon/favicon-32x32.png",
     "/public/assets/dashboard/img/man-with-laptop-light.png": "/public/assets/dashboard/img/man-with-laptop-light.png",
-    "/public/assets/dashboard/img/maviz-logo.svg": "/public/assets/dashboard/img/maviz-logo.svg"
+    "/public/assets/dashboard/img/maviz-logo.svg": "/public/assets/dashboard/img/maviz-logo.svg",
+    "/public/assets/dashboard/img/quint-logo-blue.png": "/public/assets/dashboard/img/quint-logo-blue.png",
+    "/public/assets/dashboard/img/quint-logo.png": "/public/assets/dashboard/img/quint-logo.png"
 }

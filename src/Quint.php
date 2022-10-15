@@ -2,15 +2,16 @@
 
 namespace Quint;
 
+use Exception;
+
 class Quint {
 
     /**
-           ___       _       _
-         / _ \ _   _(_)_ __ | |_
-        | | | | | | | | '_ \| __|
-        | |_| | |_| | | | | | |_
-        \__\_\\__,_|_|_| |_|\__|
-     *
+     *     ___       _       _
+     *   / _ \ _   _(_)_ __ | |_
+     *  | | | | | | | | '_ \| __|
+     *  | |_| | |_| | | | | | |_
+     *  \__\_\\__,_|_|_| |_|\__|
      *
      * @author  : 'Adam Bako'
      * @link    : 'https://bakoadam.com'
@@ -32,7 +33,7 @@ class Quint {
 
     /**
      * Boot
-     * @throws \Exception
+     * @throws Exception
      */
     public function run() {
         /*

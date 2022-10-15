@@ -1,4 +1,4 @@
-{% extends '@templates/layouts/admin.twig' %}
+{% extends '@templates/layouts/login.twig' %}
 
 {% block title %}Quint{% endblock %}
 
@@ -8,12 +8,14 @@
         <div class="authentication-inner">
             <div class="card">
                 <div class="card-body">
-                    <div class="app-brand justify-content-center mb-5">
-                        <a href="index.html" class="app-brand-link gap-2">
-                            <img src="/public/assets/dashboard/img/maviz-logo.svg" alt="">
+                    <div class="app-brand flex-column justify-content-center mb-2">
+                        <a href="/" class="app-brand-link gap-2">
+                            <img style="height: 100px;" src="/public/assets/dashboard/img/quint-logo-blue.png" alt="">
                         </a>
+                        <h1 class="justify-content-center mt-2">Quint</h1>
                     </div>
-                    <form id="formAuthentication" class="mb-3 mt-5" action="/login" method="POST">
+
+                    <form id="formAuthentication" class="mb-3 mt-0" action="/login" method="POST">
                         <div class="mb-3">
                             {#  dump(errors) #}
                             {% for error in errors %}
