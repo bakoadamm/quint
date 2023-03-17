@@ -14,6 +14,7 @@ class Eloquent implements IDatabase {
     public function __construct()
     {
         $this->capsule = new Capsule;
+        $this->capsule->setAsGlobal();
         $this->capsule->setEventDispatcher(new IlluminateDispatcher(new Container));
         $this->capsule->bootEloquent();
         $this->capsule->addConnection([

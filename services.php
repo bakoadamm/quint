@@ -35,6 +35,10 @@ return [
         return new Eloquent();
     },
 
+    'quint' => function() {
+
+    },
+
     'twigLoader' => function() {
         $loader = new FilesystemLoader(env('APP_TEMPLATE_DIR'));
         $loader->addPath(env('APP_TEMPLATE_DIR'),'templates');

@@ -15,4 +15,8 @@ class User extends Model {
     ];
 
     protected $hidden = ['password'];
+
+    public function getTableColumns() {
+        return $this->getConnection()->getSchemaBuilder()->getColumnListing($this->getTable());
+    }
 }
